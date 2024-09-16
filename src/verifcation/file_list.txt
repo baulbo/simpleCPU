@@ -1,0 +1,12 @@
+core_tb.sv
+../core/alu_control.sv
+../core/alu.sv
+../core/imm_generator.sv
+../core/control.sv
+../core/adder.sv
+../core/mux_2_to_1.sv
+../core/program_counter.sv
+../core/program_memory.sv
+../core/data_memory.sv
+../core/register_file.sv
+../core/core.sv

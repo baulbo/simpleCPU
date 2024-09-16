@@ -1,0 +1,6 @@
+.DS_Store
+dsn
+test.vcd
+*.swp
+output/*
+__pycache__
