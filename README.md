@@ -1,6 +1,8 @@
 ## 32-bit CPU Verilog Implementation
 
-This project is a single cycle RISC-V processor (32-bit) implementation (32-bit) implementation in (System)Verilog used for educational purposes. Only 11 instructions were implemented (see RV32I), making it a good reference for those looking for a simple CPU implementation.
+This project is a single cycle RISC-V processor (32-bit) implementation in (System)Verilog solely for educational purposes. Only 11 instructions were implemented (see RV32I), making it a good reference for those looking for a simple CPU implementation.
+
+It served as an exercise to learn more about how digital circuits (at RTL level) are designed and it was an attempts to familiarize myself with the lower levels of computer science.
 
 ## Development Environment 
 
@@ -24,7 +26,7 @@ NYCU's [Computer Organization course's](https://people.cs.nycu.edu.tw/~ttyeh/cou
 
 1. [x] Write an assembler in any programming language (e.g. Python) that reads assembly instructions from a text file and turns them into machine code (a .mem file) 
 2. [x] Write unit tests for the assembler checking the machine code
-3. [x] Use `$readmemb` to read the .mem file in your Verilog testbench and store the instructions in program memory
+3. [x] Use `$readmemb` to read the .mem file in your Verilog testbench and store the instructions in [program memory](./src/core/program_memory.sv)
 
 The example assembly file contains the following code, which should result in *alu_mux_out_wire* holding the value 6 after 50 time units.
 
@@ -61,7 +63,7 @@ Run the  [`compile.sh`](./src/verifcation/compile.sh) script to use the assemble
 ./compile.sh
 ```
 
-## 6 Implemented Instructions
+## Implemented Instructions
 
 | Mnemonic      | Type          | Example .asm   |
 | ------------- | --------------|----------------|
